@@ -46,7 +46,7 @@ Esse jogo possui visualização gráfica por meio da biblioteca Pygame. Na funç
     viz = "agent"
 
 
-<img src="https://github.com/lilicrst-g/rl_e_jogos/images.maze_image.png" width="480" align="center">
+<img src="https://github.com/lilicrst-g/rl_e_jogos/blob/main/images/maze_image.png" width="480" align="center">
 
 
 ### Pedra, papel, tesoura
@@ -60,15 +60,15 @@ Primeiro, escolha quais dois agentes deseja comparar (entre ql_agent, fixed_agen
 
 Resultado do QLearning contra o FixedPolicyAgent. Aqui ele escolhe aleatóriamente uma jogada e permanece com ela em todas as instâncias.
 
-<img src="https://github.com/lilicrst-g/rl_e_jogos/images.RockPaperScissors_fixed.png" width="480" align="center">
+<img src="https://github.com/lilicrst-g/rl_e_jogos/blob/main/images/RockPaperScissors_fixed.png" width="480" align="center">
 
 QLearning contra RandomAgent
 
-<img src="https://github.com/lilicrst-g/rl_e_jogos/images.RockPaperScissors_rand.png" width="480" align="center">
+<img src="https://github.com/lilicrst-g/rl_e_jogos/blob/main/images/RockPaperScissors_rand.png" width="480" align="center">
 
 QLearning contra RMaxAgent
 
-<img src="https://github.com/lilicrst-g/rl_e_jogos/images.RockPaperScissors_rMax.png" width="480" align="center">
+<img src="https://github.com/lilicrst-g/rl_e_jogos/blob/main/images/RockPaperScissors_rMax.png" width="480" align="center">
 
 
 ### Taxi
@@ -79,11 +79,11 @@ Este jogo tem duas formas de interação, escolha _True_ para abrir uma visualiz
 
 1. Visualização interativa: você controla o agente manualmente usando o teclado para guiá-lo pelo ambiente.
 
-<img src="https://github.com/lilicrst-g/rl_e_jogos/images.taxi_viz.png" width="480" align="center">
+<img src="https://github.com/lilicrst-g/rl_e_jogos/blob/main/images/taxi_viz.png" width="480" align="center">
 
 2. Execução automática: os agentes ql_agent, rand_agent e rmax_agent são treinados/executados no ambiente para comparar qual deles obtém o melhor desempenho.
 
-<img src="https://github.com/lilicrst-g/rl_e_jogos/images.taxi_agents.png" width="480" align="center">
+<img src="https://github.com/lilicrst-g/rl_e_jogos/blob/main/images/taxi_agents.png" width="480" align="center">
 
 
 ## Considerações
