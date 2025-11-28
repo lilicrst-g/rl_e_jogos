@@ -16,7 +16,7 @@ O objetivo é analisar como os alguns agentes de RL - principalmente o QLearning
 
 Clone do projeto
 
-    git clone https://github.com/AlyssonOliveira/aula_rl.git
+    git clone https://github.com/lilicrst-g/rl_e_jogos.git
 
 Criando um ambiente virtual no diretório do projeto
 
