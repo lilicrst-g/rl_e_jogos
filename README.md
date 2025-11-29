@@ -28,9 +28,9 @@ Instalando simple_rl e outras bibliotecas necessárias
     pip install simple_rl numpy matplotlib pygame
     pip install -r requeriments.txt
 
-Talvez você precise usar versões abaixo da 3.8 do Python para que tudo funcione corretamente. Além disso alguns ajustes na biblioteca do simple_rl podem ser necessárias por conta de versões descontinuadas de uma coisa ou outra (se ocorrer algum erro dessa naturaza, sugiro que peça ajuda a alguma inteligência artificial e não tenha medo de "mexer" nas classes internas do framework).
+Talvez seja necessário utilizar versões do Python anteriores à 3.8 para garantir o funcionamento completo do SimpleRL. Além disso, alguns ajustes internos na biblioteca podem ser necessários devido a funcionalidades descontinuadas em versões mais recentes. Caso encontre erros dessa natureza, recomenda-se consultar uma ferramenta de IA — não tenha medo de "mexer" nas classes internas do framework quando necessário.
 
-O algoritmo do Pedra, papel, tesoura e do Taxi geram um arquivo pdf com gráficos que mostram a recompensa acumulada pelos agentes ao longos dos episódios e das instâncias após a execução. Para abrir esse aquivo manualmente, você vai ao diretório results e em seguida no diretório do algoritmo que foi executado e abre pelo terminal com o seguinte comando:
+Nos experimentos de Pedra, Papel, Tesoura e Taxi, o código gera automaticamente um arquivo PDF contendo gráficos de recompensa acumulada ao longo dos episódios e instâncias. Para abrir esse arquivo manualmente, acesse o diretório results, depois entre na pasta correspondente ao algoritmo executado e utilize o seguinte comando no terminal:
 
     xdg-open cumulative_reward.pdf
 
@@ -44,7 +44,6 @@ Esse jogo possui visualização gráfica por meio da biblioteca Pygame. Na funç
 
     # Choose viz type.
     viz = "agent"
-
 
 <img src="https://github.com/lilicrst-g/rl_e_jogos/blob/main/images/maze_image.png" width="480" align="center">
 
@@ -88,7 +87,13 @@ Este jogo tem duas formas de interação, escolha _True_ para abrir uma visualiz
 
 ## Considerações
 
+* O SimpleRL oferece uma boa base para observar o comportamento e o processo de aprendizagem de diferentes agentes de IA em cenários de jogos. Com os ambientes e agentes já incluídos na biblioteca, é possível realizar experimentos interessantes e visualizar diversas dinâmicas de aprendizado. Porém, o framework não é muito flexível para criar ou modificar ambientes — a construção de novos jogos ou mapas exige intervenção direta no código interno, o que pode tornar a experimentação mais limitada ou trabalhosa.
+* Todo retorno, seja visual com pygame e gráfico ou pelo terminal, ajuda muito no entendimento de como o algoritmo funciona e na comparação do desempenho dos agentes. Isso é sensacional.
 * Em ambientes totalmente observáveis e com dinâmica simples (como Pedra-Papel-Tesoura), agentes baseados em exploração sistemática, como QLearning, tendem a convergir para padrões eficientes, especialmente quando enfrentam adversários determinísticos.
-* Limitações do framework SimpleRL - algumas partes da biblioteca utilizam estruturas antigas e exigiram ajustes devido à compatibilidade com versões recentes do Python.
+* Em ambientes imprevisíveis (como jogar pedra, papel e tesoura contra um RandomAgent), algoritmos como Q-Learning e R-Max tendem a apresentar desempenho menos consistente, já que não há padrões claros a serem explorados.
+* A melhor forma de aprender é realmente colocar a mão na massa — explorar o código, testar hipóteses e não ter medo de modificar o framework quando necessário.
+* Um ambiente de jogo, na prática, não difere muito de muitos ambientes do mundo real quando analisamos o desempenho das IAs. Em ambos, treinamos os agentes para maximizar recompensas — seja vencer um jogo, encontrar o melhor percurso, reduzir o tempo gasto ou superar outros agentes. Esses mesmos princípios e métricas podem ser aplicados a diversos cenários reais, onde decisões precisam ser otimizadas continuamente.
+* Seria extremamente útil implementar o recurso Easy Reproduction of Results, que recompila e executa um experimento completo a partir de arquivos gerados em execuções anteriores. No entanto, essa funcionalidade ainda não está disponível para os jogos usados neste projeto.
+
 
 -grupo DataForge
